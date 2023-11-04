@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background: #060c25;
+    
+  }
+  
+  .carrossel {
+    filter: drop-shadow(0px 0px 10px #000);
+    overflow: hidden;
+    width: 1250px;
+    height: 570px;
+
+  }
+  
+  .container {
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+   
+  }
+  
+  img {
+    margin-top: -222px;
+    width: 1250px;
+    height: 720px;
+
+  }
+.carrossel h1{
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    top: 35%;
+}
+.meio{
+    background: #060c25;
+    min-height: 100vh;
+  
+    background-repeat: no-repeat;
+    background-size: cover
+    ;
+}
+.carrossel::before{
+    content: '';
+    z-index: 50;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.5) ,rgba(0,0,0,0.5));
+    position: absolute;
+    top: 22px;
+    height: 100%;
+    width: 100%;
+    
+}
+.logo6{
+    width: 180px;
+    height: 140px;
+    
+}
+.eae{
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    top: 25%;
+}
+.meio-text{
+    padding-top: 80px;
+    color: white;
+    max-width: 600px;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    padding-left: 50px;
+   
+}
+h2{
+    font-size: 4rem;
+    position: relative;
+}
+span{
+    font-size: 6rem;
+}
+p{
+    font-size: 1rem;
+    padding: 30 0px;
+}
+.meio a {
+    padding:10px 30px;
+    display: flex;
+    position: absolute;
+    background: white;
+    top: 130%;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+.logolivro{
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+}
+.meio-img{
+   display: flex;
+   position: absolute;
+   right: 90px;
+   margin-top: 300px;
+}
+
+.container2{
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    grid-gap: 0 120px;
+    grid-template-rows: auto;
+}
+.container2 .box{
+    position: relative;
+    height: 400px;
+    background: rgba(247, 247, 247, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.container2 .box::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    transform: skew(2deg,2deg);
+}
+.container2 .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(247, 247, 247, 0.05);
+    pointer-events: none;
+}
+.content{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+.content h2{
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255,255,255,.05);
+    transition: 0.5s;
+}
+.box:hover .content h2{
+    top: -140px;
+}
+.box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+.box .content a{
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: .5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+.box:hover .content a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.box .content a:hover{
+    color: #000;
+    background: #fff;
+}
+.corpo2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c25;
+    font-family: 'poppins', sans-serif;
+    padding-bottom: 50px;
+}
+.h1corpo2{
+    text-align: center;
+    background: #060c25;
+    color: white;
+    padding-top: 50px;
+}
+.final{
+    background: #060c25;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.final-text{
+    padding-top: 40px;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.inputao{
+    text-align: center;
+    padding-top: 100px;
+}
+.input1{
+    
+    width: 500px;
+    height: 30px;
+}
+.botao{
+    text-align: center;
+    padding-top: 40px;
+}
+.botao1{
+    
+    width: 100px;
+    height: 30px;
+}
+.footer{
+    background: #060c25; 
+    color: white;
+    display: flex;
+   
+    
+}
+.footer .footerporra{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    padding: 50px 100px;
+}
+
+.footer .footerporra ul{
+    list-style: none;
+
+
+}
+.footer .footerporra ul li{
+    line-height: 40px;
+}
+.footer .footerporra ul li i{
+    font-size: 35px;
+
+}
+.footer .footerporra .irra{
+    width: 220px;
+    height: 200px;
+    
+}
+.ultimalogo{
+    padding-top: 170px;
+}
+.footer .footerporra ul:nth-child(5){
+display: flex;
+}
+
+.fotocontato{
+    padding-left: 30px;
+    padding-top: 230px;
+}
+
+.contato{
+    
+    background: #060c25;
+    min-height: 100vh;
+   
+   
+   
+}
+.contatinho{
+display: flex;
+justify-content: space-between;
+min-height: 100vh;
+}
+.contatinho h2{
+    color: white;
+    padding-right: 30px;
+
+}
+.fotocontato img{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    border-radius: 20px;
+    
+}
+.labels{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    
+}
+.label1{
+color: white;
+}
+.inputaofim{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+.botaofinal{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+.botaofinalzinho{
+    padding-top: 30px;
+}
